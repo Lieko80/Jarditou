@@ -1,0 +1,38 @@
+h1 {
+    font-size: 30px;
+}
+header {
+    display: flex;
+    flex-direction: column;
+}
+.logo {
+    width: 300px;
+    height: auto;
+    top: 30px;
+    position: relative;
+}
+.tout {
+    font: 30px sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}    
+nav, ul {
+    list-style: none;
+    background: black;
+    margin:20px 20px 20px 0px;
+    display: flex;
+}
+ul a {
+    color: white;
+    margin: 10px;
+}
+div {
+    display: flex;
+    align-items: stretch;
+}
+.colonne {
+    width: 40%;
+    border : 1px solid black;
+    background-color: rgba(108, 112, 114, 0.5);
+}
