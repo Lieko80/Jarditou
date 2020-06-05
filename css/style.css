@@ -20,6 +20,6 @@ p  {
 #button {
     margin-right: auto;
 }
-.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n) > th {
+table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n) > th {
 	background-color: #ffff99;
  }
