@@ -51,19 +51,22 @@
 <!--formulaire-->        
     <p>* Ces zones sont obligatoires</p>
     <form action="http://bienvu.net/script.php" method="GET">
+<!--formulaire 1-->
         <legend>Vos coordonnées</legend>
-        <div class="form-group">
-            <label for="nom">Votre nom*:</label>
-            <input type="text" class="col-4 form-control" id="nom" pattern="^[a-z]+$" required title="Entrez votre nom (que des caractères entre a et z)">
+    <div class="border rounded mb-2 mx-auto">
+        <div class="form-inline mt-2 mx-2">
+            <label class=col-2 for="nom">Votre nom*:</label>
+            <input type="text" class="col-4 form-control mx-2" id="nom" pattern="^[a-z]+$" required title="Entrez votre nom (que des caractères entre a et z)">
         </div>
-        <div class="form-group">
-            <label for="prenom">Votre prénom*:</label>
-            <input type="text" class="col-4 form-control" id="prenom" pattern="^[a-z]+$" required title="Entrez votre prenom (que des caractères entre a et z)">
+        <div class="form-inline mt-3 mx-2">
+            <label class=col-2 for="prenom">Votre prénom*:</label>
+            <input type="text" class="col-4 form-control mx-2" id="prenom" pattern="^[a-z]+$" required title="Entrez votre prenom (que des caractères entre a et z)">
         </div>
-        <p>Sexe*</p>
+        
 <!--radio-->
-    <div class="form-inline my-2 my-lg-0">
-        <div class="form-check mx-2">
+    <div class="form-inline my-0 my-lg-0 m">
+        <p class="mt-3 mx-5">Sexe*</p>
+        <div class="form-check mx-2 col-2">
             <input class="form-check-input" type="radio" name="sexe" id="sexe" value="Féminin" checked>
             <label class="form-check-label" for="sexe">Féminin</label>
         </div>
@@ -72,30 +75,32 @@
             <label class="form-check-label" for="sexe">Masculin</label>
         </div>
     </div>
-        <div class="form-group">
-            <label for="date">Date Naissance*:</label>
-            <input type="date" class="col-4 form-control" id="date" required>
+        <div class="form-inline mt-2 mx-2">
+            <label class=col-2 for="date">Date Naissance*:</label>
+            <input type="date" class="col-4 form-control mx-2" id="date" required>
         </div>
-        <div class="form-group">    
-            <label type="text">Code Postal : </label>
-            <input type="text" class="col-4 form-control" name="postal">
+        <div class="form-inline mt-2 mx-2">    
+            <label class=col-2 type="text">Code Postal : </label>
+            <input type="text" class="col-4 form-control mx-2" name="postal">
         </div>
-        <div class="form-group">
-            <label type="text">Adresse : </label>
-            <input type="text" class="col-4 form-control" name="adresse">
+        <div class="form-inline mt-2 mx-2">
+            <label class=col-2 type="text">Adresse : </label>
+            <input type="text" class="col-4 form-control mx-2" name="adresse">
         </div>
-        <div class="form-group">    
-            <label type="text">Ville : </label>
-            <input type="text" class="col-4 form-control" name="ville">
+        <div class="form-inline mt-2 mx-2">    
+            <label class=col-2 type="text">Ville : </label>
+            <input type="text" class="col-4 form-control mx-2" name="ville">
         </div>
-        <div class="form-group">    
-            <label for="email">Email*:</label>
-            <input type="text" class="col-4 form-control" id="email" placeholder="dave.loper@afpa.fr" required title="email"><br>
+        <div class="form-inline mt-2 mb-2 mx-2">    
+            <label class=col-2 for="email">Email*:</label>
+            <input type="text" class="col-4 form-control mx-2" id="email" placeholder="dave.loper@afpa.fr" required title="email"><br>
         </div>
-      
-            <legend>Votre demande</legend>
-            <div class="form-group">
-                <label for="sujet">Sujet*:</label>
+    </div>
+<!--formaulaire 2--> 
+        <legend>Votre demande</legend> 
+    <div class="border rounded mt-3">             
+            <div class="form-inline mx-3 mt-2">
+                <label class=col-2 for="sujet">Sujet*:</label>
                 <select class="col-2 form-control" id="sujet" size="1" required>
                 <option value="">Selectionner</option>
                 <option>Mes commandes</option>
@@ -104,7 +109,7 @@
                 <option>Autres</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div class="form-group col-7 rounded">
             <label for="question">Votre question*:</label>
             <textarea class="form-control" id="question" rows="3" required></textarea>       
         </div>
@@ -113,8 +118,9 @@
             <input type="checkbox" name="cocher" required>
             <label for="cocher">j'accepte le traitement informatique de ce formulaire</label>
         </div>   
-            <button class="btn btn-secondary" type="submit">Envoyer</button>
-            <button class="btn btn-secondary" type="submit">Annuler</button>
+            <button class="btn btn-secondary mx-3 mb-2" type="submit">Envoyer</button>
+            <button class="btn btn-secondary mb-2" type="submit">Annuler</button>
+    </div>
     </form>
     <footer>
         <nav class="navbar navbar-expand-lg mt-3 navbar-dark bg-dark ">
