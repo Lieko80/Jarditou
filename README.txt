@@ -1,1 +1,1 @@
-exo pour la formation
+exo jarditou boostrap
